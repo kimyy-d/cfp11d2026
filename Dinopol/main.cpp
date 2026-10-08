@@ -226,3 +226,19 @@ int main() {
 bool validateInput(double value, double minVal, double maxVal) {
     return (value >= minVal && value <= maxVal);
 }
+void displayMenu() {
+    cout << "\n===== HVAC ENERGY ESTIMATOR =====\n";
+    cout << "1. Run New Calculation\n";
+    cout << "2. Exit\n";
+    cout << "===================================\n";
+}
+
+void generateReport(const Building& b, const Climate& c, const Occupancy& o,
+                    double monthlyHeating[], double monthlyCooling[], double monthlyCost[],
+                    const MonthlyResult results[]) {
+    // Report generation handled in main()
+}
+
+void compareSystems(double load) {
+    // System comparison handled in main()
+}
